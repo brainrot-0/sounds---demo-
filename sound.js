@@ -1,27 +1,27 @@
 // Define sounds and descriptions
 const sounds = {
   rain: {
-    file: 'sounds/rain.mp3',
+    file: 'rain.mp3',
     title: 'Stress Relief',
     desc: 'Gentle rain and soft tones to calm your mind and reduce tension.'
   },
   forest: {
-    file: 'sounds/forest.mp3',
+    file: 'forest.mp3',
     title: 'Anxiety Relief',
     desc: 'Forest ambience and birdsong to ease restlessness and promote peace.'
   },
   ambient: {
-    file: 'sounds/ambient.mp3',
+    file: 'ambient.mp3',
     title: 'Depression Boost',
     desc: 'Warm ambient music to lift your mood and restore energy.'
   },
   ocean: {
-    file: 'sounds/ocean.mp3',
+    file: 'ocean.mp3',
     title: 'Panic Attack Relief',
     desc: 'Slow ocean waves to ground and soothe during moments of overwhelm.'
   },
   white_noise: {
-    file: 'sounds/white_noise.mp3',
+    file: 'white_noise.mp3',
     title: 'Digital Overload Reset',
     desc: 'White noise to mask distractions and help you reset focus.'
   }
@@ -64,3 +64,4 @@ window.addEventListener('beforeunload', () => {
   audioPlayer.pause();
   audioPlayer.src = '';
 });
+
