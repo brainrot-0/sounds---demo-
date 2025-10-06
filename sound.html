@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calming Sounds Therapy</title>
+  <link rel="stylesheet" href="sound.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calming Sounds Therapy</h1>
+    <p>Choose a sound theme to relax and reset your mind.</p>
+    <button id="openPanel">Select Sound</button>
+
+    <div id="soundArea" class="sound-area">
+      <h2 id="soundTitle"></h2>
+      <p id="soundDesc"></p>
+      <audio id="audioPlayer" controls loop></audio>
+    </div>
+  </div>
+
+  <div id="sidePanel" class="side-panel">
+    <h2>Sound Options</h2>
+    <div class="options">
+      <div onclick="playSound('rain')">🌧 Stress Relief</div>
+      <div onclick="playSound('forest')">🌿 Anxiety Relief</div>
+      <div onclick="playSound('ambient')">☀️ Depression Boost</div>
+      <div onclick="playSound('ocean')">🌊 Panic Attack</div>
+      <div onclick="playSound('white_noise')">💻 Digital Overload</div>
+    </div>
+    <div class="close" id="closePanel">✕ Close</div>
+  </div>
+
+  <script src="sound.js"></script>
+</body>
+</html>
